@@ -1,0 +1,46 @@
+use caseificio;
+
+drop table if exists Utente;
+drop table if exists DatiPersonali;
+
+create table DatiPersonali (
+	utente int primary key,
+    residenza varchar(255) not null,
+	comune varchar(255) not null,
+    citta varchar(255) not null,
+    cap varchar(5) not null
+);
+
+create table Utente (
+	id int,
+    nome varchar(255),
+    cognome varchar(255),
+    email varchar(100),
+    dati_personali int,
+
+	constraint pk_utente primary key (id),
+    constraint fk_dati_personali foreign key (dati_personali) references DatiPersonali (utente)
+		on update cascade on delete restrict
+);
+
+
+create table Prodotto(
+	id int,
+    nome varchar(255),
+    provenienza varchar(255),
+    tempo_preparazione int,
+    prezzo int,
+    descrizione varchar(1000),
+
+    unique(nome, provenienza),
+    constraint pk_prodotto primary key (id, nome)
+);
+
+create table Acquisto(
+	id int primary key,
+    utente int,
+    prodotto int,
+
+    constraint fk_utente foreign key (utente) references Utente(id) on update cascade on delete restrict,
+    constraint fk_prodotto foreign key (prodotto) references Prodotto(id) on update cascade on delete restrict
+);

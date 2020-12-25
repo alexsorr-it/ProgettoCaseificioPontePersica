@@ -1,0 +1,198 @@
+body {
+    background-color: rgb(228, 228, 228);
+}
+
+.navi {
+    background-color: black;
+    padding: 2em;
+}
+
+.naviElem {
+    font-size: 28px;
+    color: white;
+}
+
+.textWeek {
+    padding-left: 50px;
+}
+
+.panelNavi {
+    width: 100%;
+    height: 120px;
+}
+
+.panelNaviElem {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 15px 0;
+}
+
+.notEWObut {
+    margin-left: 5px;
+}
+
+.panel {
+    width: 100%;
+}
+
+.panelElem {
+    width: 90%;
+    margin: auto;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+.panelEWO {
+    width: 100%;
+}
+
+.idEwo {
+    width: 5%;
+    text-align: center;
+}
+
+.areaEwo {
+    width: 40%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
+}
+
+.typeEwo {
+    width: 25%;
+    padding: 10px;
+
+}
+
+.timeEwo {
+    width: 30%;
+    padding: 10px;
+
+}
+
+.butEWO {
+    padding: 10px;
+    text-align: center;
+}
+
+.butTickets {
+    padding: 10px;
+    text-align: center;
+}
+
+.but-close {
+    /*background: url(../img/close.png);*/
+    height: 44px;
+    width: 44px;
+    border: none;
+}
+
+.but-close:focus {
+    outline: 0;
+}
+
+.title-ewo {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.imageWarining {
+    width: 30px;
+}
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.card {
+    border: 0;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    border-radius: 6px;
+    color: #333;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    font-size: .875rem;
+}
+
+.card [class*="card-header-"]:not(.card-header-icon):not(.card-header-text):not(.card-header-image) {
+    border-radius: 3px;
+    margin-top: -20px;
+    padding: 15px;
+}
+
+.card .card-header-warning .card-icon, .card .card-header-warning .card-text, .card .card-header-warning:not(.card-header-icon):not(.card-header-text) {
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, .14), 0 7px 10px -5px rgba(255, 152, 0, .4);
+}
+
+.card .card-header-warning .card-icon, .card .card-header-warning .card-text, .card .card-header-warning:not(.card-header-icon):not(.card-header-text), .card.bg-warning, .card.card-rotate.bg-warning .back, .card.card-rotate.bg-warning .front {
+    background: linear-gradient(60deg, #ffa726, #fb8c00);
+}
+
+.card [class*="card-header-"] {
+    margin: 0 15px;
+    padding: 0;
+    position: relative;
+}
+
+.card [class*="card-header-"], .card [class*="card-header-"] .card-title, .card [class*="card-header-"] .card-title a, .card [class*="card-header-"] .icon i, .card[class*="bg-"], .card[class*="bg-"] .card-title, .card[class*="bg-"] .card-title a, .card[class*="bg-"] .icon i {
+    font-size: x-large;
+    color: #fff;
+}
+
+.card .card-header {
+    border-bottom: none;
+    background: 0 0;
+    z-index: 3 !important;
+}
+
+.card-header:first-child {
+    border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.card-subtitle {
+    font-size: medium;
+}
+
+.table thead th {
+    font-size: .95rem;
+    font-weight: 500;
+    border-top-width: 0;
+    vertical-align: bottom;
+    border-bottom: 2px solid rgba(0, 0, 0, .06);
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid rgba(0, 0, 0, .06);
+}
+
+.h1, .h2, .h3, .h4, body, h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+}
